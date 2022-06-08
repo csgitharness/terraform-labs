@@ -12,7 +12,7 @@ terraform {
   }
 }
 
-resource aws_s3_bucket_versioning "kartikeya-lab-ex2" {
+resource "aws_s3_bucket" "kartikeya-lab-ex2" {
   bucket = "${var.s3_bucket_name}"
   acl = "private"
   region = "${var.s3_bucket_region}"
