@@ -15,7 +15,7 @@ terraform {
 resource "aws_s3_bucket" "kartikeya-ex2" {
   bucket = "${var.s3_bucket_name}"
   acl = "private"
-  region = "${var.s3_bucket_region}"
+  #region = "${var.s3_bucket_region}"
   
   versioning {
     enabled = true
