@@ -6,13 +6,13 @@ provider "aws" {
 
 terraform {
    backend "s3" {
-   bucket = "ka-tf-remote-state-bucket"
+   bucket = "kartikeya-lab-ex2"
    key = "terraform.tfstate"
    region = "us-east-1"
   }
 }
 
-resource "aws_s3_bucket" "kartikeya-lab-ex2" {
+resource "aws_s3_bucket" "ka-tf-remote-state-bucket" {
   bucket = "${var.s3_bucket_name}"
   acl = "private"
   region = "${var.s3_bucket_region}"
